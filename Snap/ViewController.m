@@ -117,8 +117,8 @@ UICollectionViewDelegateFlowLayout>
 - (void)updatePlayersLabel
 {
   NSString *text = @"Just you playing";
-  if ([ServerHelper sharedHelper].connectedClients > 0) {
-    text = [NSString stringWithFormat:@"%li players connected", [ServerHelper sharedHelper].connectedClients];
+  if ([ServerHelper sharedHelper].connectedClients.count > 0) {
+    text = [NSString stringWithFormat:@"%li players connected", [ServerHelper sharedHelper].connectedClients.count];
   }
   _playersLabel.text = text;
 }

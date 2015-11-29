@@ -26,9 +26,7 @@
 		03F1D8A41C0A261400291C24 /* AsyncNetworkIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03F1D89E1C0A258700291C24 /* AsyncNetworkIOS.framework */; };
 		03F1D8A51C0A261400291C24 /* AsyncNetworkIOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 03F1D89E1C0A258700291C24 /* AsyncNetworkIOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		03F1D8A91C0A29BA00291C24 /* ServerHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F1D8A81C0A29BA00291C24 /* ServerHelper.m */; };
-		03F1D8AA1C0A29BA00291C24 /* ServerHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F1D8A81C0A29BA00291C24 /* ServerHelper.m */; };
 		03F1D8AD1C0A5D0B00291C24 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F1D8AC1C0A5D0B00291C24 /* GameViewController.m */; };
-		03F1D8AE1C0A5D0B00291C24 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F1D8AC1C0A5D0B00291C24 /* GameViewController.m */; };
 		03F1D8B31C0AFF8C00291C24 /* card.wav in Resources */ = {isa = PBXBuildFile; fileRef = 03F1D8B01C0AFF8C00291C24 /* card.wav */; };
 		03F1D8B41C0AFF8C00291C24 /* fail.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 03F1D8B11C0AFF8C00291C24 /* fail.mp3 */; };
 		03F1D8B51C0AFF8C00291C24 /* win.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 03F1D8B21C0AFF8C00291C24 /* win.mp3 */; };
@@ -327,8 +325,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03F1D8AE1C0A5D0B00291C24 /* GameViewController.m in Sources */,
-				03F1D8AA1C0A29BA00291C24 /* ServerHelper.m in Sources */,
 				03F1D8851C0A09A300291C24 /* ViewController.m in Sources */,
 				03F1D8821C0A09A300291C24 /* AppDelegate.m in Sources */,
 				03F1D87F1C0A09A300291C24 /* main.m in Sources */,
@@ -518,6 +514,7 @@
 				03F1D8761C0A098C00291C24 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		03F1D88F1C0A09A300291C24 /* Build configuration list for PBXNativeTarget "Snap iOS" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +523,7 @@
 				03F1D8911C0A09A300291C24 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

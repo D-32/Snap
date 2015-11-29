@@ -7,7 +7,6 @@
 //
 
 #import "ServerHelper.h"
-#import <AsyncNetworkIOS/AsyncServer.h>
 
 @interface ServerHelper () <AsyncServerDelegate>
 @end
@@ -34,13 +33,22 @@
 }
 
 #pragma mark - AsyncServerDelegate
+- (void)server:(AsyncServer *)theServer didConnect:(AsyncConnection *)connection
+{
+  [self.connectedClients addObject:connection];
+}
+
+- (void)server:(AsyncServer *)theServer didDisconnect:(AsyncConnection *)connection
+{
+  [self.connectedClients removeObject:connection];
+}
+
 - (void)server:(AsyncServer *)theServer didReceiveCommand:(AsyncCommand)command object:(id)object connection:(AsyncConnection *)connection responseBlock:(AsyncNetworkResponseBlock)block
 {
   if (command == 1) {
-    self.connectedClients += 1;
+    block(@(self.connectedClients + 1));
   }
-
-  block(@(YES));
+  block(nil);
 }
 
 @end

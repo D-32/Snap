@@ -7,11 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <AsyncNetworkIOS/AsyncServer.h>
 
 @interface ServerHelper : NSObject
 
 + (ServerHelper *)sharedHelper;
 
-@property (nonatomic) NSInteger connectedClients;
+@property (nonatomic, readonly) NSMutableArray<AsyncConnection *> *connectedClients;
 
 @end

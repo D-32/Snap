@@ -77,7 +77,7 @@
   _timeLeft = 60;
 
   _scores = [NSMutableArray<NSNumber *> arrayWithObject:@(0)];
-  for (int i = 0; i < [ServerHelper sharedHelper].connectedClients; i++) {
+  for (int i = 0; i < [ServerHelper sharedHelper].connectedClients.count; i++) {
     [_scores addObject:@(0)];
   }
 
