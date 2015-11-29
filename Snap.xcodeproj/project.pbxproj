@@ -1,0 +1,533 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03F1D8651C0A098C00291C24 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F1D8641C0A098C00291C24 /* main.m */; };
+		03F1D8681C0A098C00291C24 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F1D8671C0A098C00291C24 /* AppDelegate.m */; };
+		03F1D86B1C0A098C00291C24 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F1D86A1C0A098C00291C24 /* ViewController.m */; };
+		03F1D8701C0A098C00291C24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03F1D86F1C0A098C00291C24 /* Assets.xcassets */; };
+		03F1D87F1C0A09A300291C24 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F1D87E1C0A09A300291C24 /* main.m */; };
+		03F1D8821C0A09A300291C24 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F1D8811C0A09A300291C24 /* AppDelegate.m */; };
+		03F1D8851C0A09A300291C24 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F1D8841C0A09A300291C24 /* ViewController.m */; };
+		03F1D88A1C0A09A300291C24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03F1D8891C0A09A300291C24 /* Assets.xcassets */; };
+		03F1D88D1C0A09A300291C24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03F1D88B1C0A09A300291C24 /* LaunchScreen.storyboard */; };
+		03F1D8941C0A104500291C24 /* FancyButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F1D8931C0A104500291C24 /* FancyButton.m */; };
+		03F1D8991C0A15E600291C24 /* ThemeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F1D8981C0A15E600291C24 /* ThemeCell.m */; };
+		03F1D89C1C0A1F7700291C24 /* KTCenterFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F1D89B1C0A1F7700291C24 /* KTCenterFlowLayout.m */; };
+		03F1D89F1C0A258700291C24 /* AsyncNetworkIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03F1D89E1C0A258700291C24 /* AsyncNetworkIOS.framework */; };
+		03F1D8A01C0A258700291C24 /* AsyncNetworkIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03F1D89E1C0A258700291C24 /* AsyncNetworkIOS.framework */; };
+		03F1D8A11C0A260F00291C24 /* AsyncNetworkIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03F1D89E1C0A258700291C24 /* AsyncNetworkIOS.framework */; };
+		03F1D8A21C0A260F00291C24 /* AsyncNetworkIOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 03F1D89E1C0A258700291C24 /* AsyncNetworkIOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		03F1D8A41C0A261400291C24 /* AsyncNetworkIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03F1D89E1C0A258700291C24 /* AsyncNetworkIOS.framework */; };
+		03F1D8A51C0A261400291C24 /* AsyncNetworkIOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 03F1D89E1C0A258700291C24 /* AsyncNetworkIOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		03F1D8A91C0A29BA00291C24 /* ServerHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F1D8A81C0A29BA00291C24 /* ServerHelper.m */; };
+		03F1D8AA1C0A29BA00291C24 /* ServerHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F1D8A81C0A29BA00291C24 /* ServerHelper.m */; };
+		03F1D8AD1C0A5D0B00291C24 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F1D8AC1C0A5D0B00291C24 /* GameViewController.m */; };
+		03F1D8AE1C0A5D0B00291C24 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F1D8AC1C0A5D0B00291C24 /* GameViewController.m */; };
+		03F1D8B31C0AFF8C00291C24 /* card.wav in Resources */ = {isa = PBXBuildFile; fileRef = 03F1D8B01C0AFF8C00291C24 /* card.wav */; };
+		03F1D8B41C0AFF8C00291C24 /* fail.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 03F1D8B11C0AFF8C00291C24 /* fail.mp3 */; };
+		03F1D8B51C0AFF8C00291C24 /* win.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 03F1D8B21C0AFF8C00291C24 /* win.mp3 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		03F1D8A31C0A260F00291C24 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				03F1D8A21C0A260F00291C24 /* AsyncNetworkIOS.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03F1D8A61C0A261400291C24 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				03F1D8A51C0A261400291C24 /* AsyncNetworkIOS.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		03F1D8601C0A098C00291C24 /* Snap TV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Snap TV.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		03F1D8641C0A098C00291C24 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		03F1D8661C0A098C00291C24 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		03F1D8671C0A098C00291C24 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		03F1D8691C0A098C00291C24 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		03F1D86A1C0A098C00291C24 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		03F1D86F1C0A098C00291C24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		03F1D8711C0A098C00291C24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03F1D87B1C0A09A300291C24 /* Snap iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Snap iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		03F1D87E1C0A09A300291C24 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		03F1D8801C0A09A300291C24 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		03F1D8811C0A09A300291C24 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		03F1D8831C0A09A300291C24 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		03F1D8841C0A09A300291C24 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		03F1D8891C0A09A300291C24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		03F1D88C1C0A09A300291C24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		03F1D88E1C0A09A300291C24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03F1D8921C0A104500291C24 /* FancyButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FancyButton.h; sourceTree = "<group>"; };
+		03F1D8931C0A104500291C24 /* FancyButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FancyButton.m; sourceTree = "<group>"; };
+		03F1D8971C0A15E600291C24 /* ThemeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThemeCell.h; sourceTree = "<group>"; };
+		03F1D8981C0A15E600291C24 /* ThemeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThemeCell.m; sourceTree = "<group>"; };
+		03F1D89A1C0A1F7700291C24 /* KTCenterFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTCenterFlowLayout.h; sourceTree = "<group>"; };
+		03F1D89B1C0A1F7700291C24 /* KTCenterFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KTCenterFlowLayout.m; sourceTree = "<group>"; };
+		03F1D89E1C0A258700291C24 /* AsyncNetworkIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AsyncNetworkIOS.framework; sourceTree = "<group>"; };
+		03F1D8A71C0A29BA00291C24 /* ServerHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServerHelper.h; sourceTree = "<group>"; };
+		03F1D8A81C0A29BA00291C24 /* ServerHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServerHelper.m; sourceTree = "<group>"; };
+		03F1D8AB1C0A5D0B00291C24 /* GameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		03F1D8AC1C0A5D0B00291C24 /* GameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
+		03F1D8B01C0AFF8C00291C24 /* card.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = card.wav; sourceTree = "<group>"; };
+		03F1D8B11C0AFF8C00291C24 /* fail.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = fail.mp3; sourceTree = "<group>"; };
+		03F1D8B21C0AFF8C00291C24 /* win.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = win.mp3; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		03F1D85D1C0A098C00291C24 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03F1D8A11C0A260F00291C24 /* AsyncNetworkIOS.framework in Frameworks */,
+				03F1D89F1C0A258700291C24 /* AsyncNetworkIOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03F1D8781C0A09A300291C24 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03F1D8A41C0A261400291C24 /* AsyncNetworkIOS.framework in Frameworks */,
+				03F1D8A01C0A258700291C24 /* AsyncNetworkIOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03F1D8571C0A098C00291C24 = {
+			isa = PBXGroup;
+			children = (
+				03F1D8621C0A098C00291C24 /* Snap */,
+				03F1D87C1C0A09A300291C24 /* Snap iOS */,
+				03F1D89D1C0A258700291C24 /* Libs */,
+				03F1D8611C0A098C00291C24 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		03F1D8611C0A098C00291C24 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				03F1D8601C0A098C00291C24 /* Snap TV.app */,
+				03F1D87B1C0A09A300291C24 /* Snap iOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		03F1D8621C0A098C00291C24 /* Snap */ = {
+			isa = PBXGroup;
+			children = (
+				03F1D8661C0A098C00291C24 /* AppDelegate.h */,
+				03F1D8671C0A098C00291C24 /* AppDelegate.m */,
+				03F1D89A1C0A1F7700291C24 /* KTCenterFlowLayout.h */,
+				03F1D89B1C0A1F7700291C24 /* KTCenterFlowLayout.m */,
+				03F1D8AB1C0A5D0B00291C24 /* GameViewController.h */,
+				03F1D8AC1C0A5D0B00291C24 /* GameViewController.m */,
+				03F1D8921C0A104500291C24 /* FancyButton.h */,
+				03F1D8931C0A104500291C24 /* FancyButton.m */,
+				03F1D8A71C0A29BA00291C24 /* ServerHelper.h */,
+				03F1D8A81C0A29BA00291C24 /* ServerHelper.m */,
+				03F1D8971C0A15E600291C24 /* ThemeCell.h */,
+				03F1D8981C0A15E600291C24 /* ThemeCell.m */,
+				03F1D8691C0A098C00291C24 /* ViewController.h */,
+				03F1D86A1C0A098C00291C24 /* ViewController.m */,
+				03F1D8AF1C0AFF4E00291C24 /* Audio */,
+				03F1D86F1C0A098C00291C24 /* Assets.xcassets */,
+				03F1D8711C0A098C00291C24 /* Info.plist */,
+				03F1D8631C0A098C00291C24 /* Supporting Files */,
+			);
+			path = Snap;
+			sourceTree = "<group>";
+		};
+		03F1D8631C0A098C00291C24 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				03F1D8641C0A098C00291C24 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		03F1D87C1C0A09A300291C24 /* Snap iOS */ = {
+			isa = PBXGroup;
+			children = (
+				03F1D8801C0A09A300291C24 /* AppDelegate.h */,
+				03F1D8811C0A09A300291C24 /* AppDelegate.m */,
+				03F1D8831C0A09A300291C24 /* ViewController.h */,
+				03F1D8841C0A09A300291C24 /* ViewController.m */,
+				03F1D8891C0A09A300291C24 /* Assets.xcassets */,
+				03F1D88B1C0A09A300291C24 /* LaunchScreen.storyboard */,
+				03F1D88E1C0A09A300291C24 /* Info.plist */,
+				03F1D87D1C0A09A300291C24 /* Supporting Files */,
+			);
+			path = "Snap iOS";
+			sourceTree = "<group>";
+		};
+		03F1D87D1C0A09A300291C24 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				03F1D87E1C0A09A300291C24 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		03F1D89D1C0A258700291C24 /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				03F1D89E1C0A258700291C24 /* AsyncNetworkIOS.framework */,
+			);
+			path = Libs;
+			sourceTree = "<group>";
+		};
+		03F1D8AF1C0AFF4E00291C24 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				03F1D8B01C0AFF8C00291C24 /* card.wav */,
+				03F1D8B11C0AFF8C00291C24 /* fail.mp3 */,
+				03F1D8B21C0AFF8C00291C24 /* win.mp3 */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		03F1D85F1C0A098C00291C24 /* Snap TV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03F1D8741C0A098C00291C24 /* Build configuration list for PBXNativeTarget "Snap TV" */;
+			buildPhases = (
+				03F1D85C1C0A098C00291C24 /* Sources */,
+				03F1D85D1C0A098C00291C24 /* Frameworks */,
+				03F1D85E1C0A098C00291C24 /* Resources */,
+				03F1D8A31C0A260F00291C24 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Snap TV";
+			productName = Snap;
+			productReference = 03F1D8601C0A098C00291C24 /* Snap TV.app */;
+			productType = "com.apple.product-type.application";
+		};
+		03F1D87A1C0A09A300291C24 /* Snap iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03F1D88F1C0A09A300291C24 /* Build configuration list for PBXNativeTarget "Snap iOS" */;
+			buildPhases = (
+				03F1D8771C0A09A300291C24 /* Sources */,
+				03F1D8781C0A09A300291C24 /* Frameworks */,
+				03F1D8791C0A09A300291C24 /* Resources */,
+				03F1D8A61C0A261400291C24 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Snap iOS";
+			productName = "Snap iOS";
+			productReference = 03F1D87B1C0A09A300291C24 /* Snap iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		03F1D8581C0A098C00291C24 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Dylan Marriott";
+				TargetAttributes = {
+					03F1D85F1C0A098C00291C24 = {
+						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = 5EFBK52YD3;
+					};
+					03F1D87A1C0A09A300291C24 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+				};
+			};
+			buildConfigurationList = 03F1D85B1C0A098C00291C24 /* Build configuration list for PBXProject "Snap" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 03F1D8571C0A098C00291C24;
+			productRefGroup = 03F1D8611C0A098C00291C24 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				03F1D85F1C0A098C00291C24 /* Snap TV */,
+				03F1D87A1C0A09A300291C24 /* Snap iOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		03F1D85E1C0A098C00291C24 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03F1D8B31C0AFF8C00291C24 /* card.wav in Resources */,
+				03F1D8701C0A098C00291C24 /* Assets.xcassets in Resources */,
+				03F1D8B41C0AFF8C00291C24 /* fail.mp3 in Resources */,
+				03F1D8B51C0AFF8C00291C24 /* win.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03F1D8791C0A09A300291C24 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03F1D88D1C0A09A300291C24 /* LaunchScreen.storyboard in Resources */,
+				03F1D88A1C0A09A300291C24 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		03F1D85C1C0A098C00291C24 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03F1D8AD1C0A5D0B00291C24 /* GameViewController.m in Sources */,
+				03F1D86B1C0A098C00291C24 /* ViewController.m in Sources */,
+				03F1D8941C0A104500291C24 /* FancyButton.m in Sources */,
+				03F1D8681C0A098C00291C24 /* AppDelegate.m in Sources */,
+				03F1D8651C0A098C00291C24 /* main.m in Sources */,
+				03F1D8991C0A15E600291C24 /* ThemeCell.m in Sources */,
+				03F1D89C1C0A1F7700291C24 /* KTCenterFlowLayout.m in Sources */,
+				03F1D8A91C0A29BA00291C24 /* ServerHelper.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03F1D8771C0A09A300291C24 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03F1D8AE1C0A5D0B00291C24 /* GameViewController.m in Sources */,
+				03F1D8AA1C0A29BA00291C24 /* ServerHelper.m in Sources */,
+				03F1D8851C0A09A300291C24 /* ViewController.m in Sources */,
+				03F1D8821C0A09A300291C24 /* AppDelegate.m in Sources */,
+				03F1D87F1C0A09A300291C24 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		03F1D88B1C0A09A300291C24 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				03F1D88C1C0A09A300291C24 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		03F1D8721C0A098C00291C24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		03F1D8731C0A098C00291C24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		03F1D8751C0A098C00291C24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Libs",
+				);
+				INFOPLIST_FILE = Snap/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dylanmarriott.Snap;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		03F1D8761C0A098C00291C24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Libs",
+				);
+				INFOPLIST_FILE = Snap/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dylanmarriott.Snap;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		03F1D8901C0A09A300291C24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Libs",
+				);
+				INFOPLIST_FILE = "Snap iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dylanmarriott.Snap-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		03F1D8911C0A09A300291C24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Libs",
+				);
+				INFOPLIST_FILE = "Snap iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dylanmarriott.Snap-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		03F1D85B1C0A098C00291C24 /* Build configuration list for PBXProject "Snap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03F1D8721C0A098C00291C24 /* Debug */,
+				03F1D8731C0A098C00291C24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03F1D8741C0A098C00291C24 /* Build configuration list for PBXNativeTarget "Snap TV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03F1D8751C0A098C00291C24 /* Debug */,
+				03F1D8761C0A098C00291C24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		03F1D88F1C0A09A300291C24 /* Build configuration list for PBXNativeTarget "Snap iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03F1D8901C0A09A300291C24 /* Debug */,
+				03F1D8911C0A09A300291C24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 03F1D8581C0A098C00291C24 /* Project object */;
+}
