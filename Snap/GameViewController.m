@@ -11,6 +11,9 @@
 #import "FancyButton.h"
 #import <AVFoundation/AVFoundation.h>
 
+@interface GameViewController () <ServerHelperDelegate>
+@end
+
 @implementation GameViewController
 {
   NSString *_theme;
@@ -66,6 +69,8 @@
     _cardSound = [[AVAudioPlayer alloc] initWithContentsOfURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"card" ofType:@"wav"]] error:nil];
     _winSound = [[AVAudioPlayer alloc] initWithContentsOfURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"win" ofType:@"mp3"]] error:nil];
     _failSound = [[AVAudioPlayer alloc] initWithContentsOfURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"fail" ofType:@"mp3"]] error:nil];
+
+    [ServerHelper sharedHelper].delegate = self;
   }
   return self;
 }
@@ -252,6 +257,13 @@
   }
 
   [self updateScores];
+}
+
+#pragma mark - ServerHelperDelegate
+- (void)snapFromPlayer:(NSInteger)player
+{
+  NSAssert(player > 0, @"Player 0 can't be remote");
+  [self playerDidSnap:player];
 }
 
 @end

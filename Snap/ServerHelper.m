@@ -47,6 +47,9 @@
 {
   if (command == 1) {
     block(@(self.connectedClients.count + 1));
+  } else if (command == 2) {
+    NSInteger player = [self.connectedClients indexOfObject:connection] + 1;
+    [self.delegate snapFromPlayer:player];
   }
   block(nil);
 }

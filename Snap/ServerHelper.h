@@ -9,10 +9,17 @@
 #import <Foundation/Foundation.h>
 #import <AsyncNetworkIOS/AsyncServer.h>
 
+@protocol ServerHelperDelegate
+
+- (void)snapFromPlayer:(NSInteger)player;
+
+@end
+
 @interface ServerHelper : NSObject
 
 + (ServerHelper *)sharedHelper;
 
 @property (nonatomic, readonly) NSMutableArray<AsyncConnection *> *connectedClients;
+@property (nonatomic, weak) id<ServerHelperDelegate> delegate;
 
 @end
