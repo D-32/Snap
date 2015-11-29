@@ -95,7 +95,7 @@
 
   UIButton *snapButton = [FancyButton buttonWithType:UIButtonTypeSystem];
   snapButton.frame = CGRectMake(self.view.frame.size.width / 2 - 160, self.view.frame.size.height - 240, 320, 120);
-  snapButton.backgroundColor = [UIColor colorWithRed:0.04 green:0.52 blue:0.89 alpha:1.00];;
+  snapButton.backgroundColor = [UIColor colorWithRed:0.04 green:0.52 blue:0.89 alpha:1.00];
   [snapButton addTarget:self action:@selector(snap:) forControlEvents:UIControlEventPrimaryActionTriggered];
   [self.view addSubview:snapButton];
 

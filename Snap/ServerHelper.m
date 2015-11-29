@@ -46,7 +46,7 @@
 - (void)server:(AsyncServer *)theServer didReceiveCommand:(AsyncCommand)command object:(id)object connection:(AsyncConnection *)connection responseBlock:(AsyncNetworkResponseBlock)block
 {
   if (command == 1) {
-    block(@(self.connectedClients + 1));
+    block(@(self.connectedClients.count + 1));
   }
   block(nil);
 }
