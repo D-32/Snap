@@ -11,7 +11,9 @@
 @interface ServerHelper () <AsyncServerDelegate>
 @end
 
-@implementation ServerHelper
+@implementation ServerHelper {
+  AsyncServer *_server;
+}
 
 + (ServerHelper *)sharedHelper {
   static ServerHelper *sharedHelper = nil;
@@ -24,10 +26,11 @@
 
 - (id)init {
   if (self = [super init]) {
-    AsyncServer *server = [AsyncServer new];
-    server.serviceName = @"Snap";
-    server.delegate = self;
-    [server start];
+    _server = [AsyncServer new];
+    _server.serviceName = @"Snap";
+    _server.delegate = self;
+    _server.serviceType = @"_ClientServer._tcp";
+    [_server start];
   }
   return self;
 }

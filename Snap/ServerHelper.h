@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <AsyncNetworkIOS/AsyncServer.h>
+#import <AsyncNetworkTvOS/AsyncServer.h>
 
 @protocol ServerHelperDelegate
 

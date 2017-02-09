@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		035F08131C10AAEE0035633E /* AsyncNetworkTvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 035F08121C10AAEE0035633E /* AsyncNetworkTvOS.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		035F08141C10AAF20035633E /* AsyncNetworkTvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 035F08121C10AAEE0035633E /* AsyncNetworkTvOS.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		035F08151C10AAF20035633E /* AsyncNetworkTvOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 035F08121C10AAEE0035633E /* AsyncNetworkTvOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		03F1D8651C0A098C00291C24 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F1D8641C0A098C00291C24 /* main.m */; };
 		03F1D8681C0A098C00291C24 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F1D8671C0A098C00291C24 /* AppDelegate.m */; };
 		03F1D86B1C0A098C00291C24 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F1D86A1C0A098C00291C24 /* ViewController.m */; };
@@ -19,10 +22,6 @@
 		03F1D8941C0A104500291C24 /* FancyButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F1D8931C0A104500291C24 /* FancyButton.m */; };
 		03F1D8991C0A15E600291C24 /* ThemeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F1D8981C0A15E600291C24 /* ThemeCell.m */; };
 		03F1D89C1C0A1F7700291C24 /* KTCenterFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F1D89B1C0A1F7700291C24 /* KTCenterFlowLayout.m */; };
-		03F1D89F1C0A258700291C24 /* AsyncNetworkIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03F1D89E1C0A258700291C24 /* AsyncNetworkIOS.framework */; };
-		03F1D8A01C0A258700291C24 /* AsyncNetworkIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03F1D89E1C0A258700291C24 /* AsyncNetworkIOS.framework */; };
-		03F1D8A11C0A260F00291C24 /* AsyncNetworkIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03F1D89E1C0A258700291C24 /* AsyncNetworkIOS.framework */; };
-		03F1D8A21C0A260F00291C24 /* AsyncNetworkIOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 03F1D89E1C0A258700291C24 /* AsyncNetworkIOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		03F1D8A41C0A261400291C24 /* AsyncNetworkIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03F1D89E1C0A258700291C24 /* AsyncNetworkIOS.framework */; };
 		03F1D8A51C0A261400291C24 /* AsyncNetworkIOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 03F1D89E1C0A258700291C24 /* AsyncNetworkIOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		03F1D8A91C0A29BA00291C24 /* ServerHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F1D8A81C0A29BA00291C24 /* ServerHelper.m */; };
@@ -33,13 +32,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		03F1D8A31C0A260F00291C24 /* Embed Frameworks */ = {
+		035F08111C10AA390035633E /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 12;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				03F1D8A21C0A260F00291C24 /* AsyncNetworkIOS.framework in Embed Frameworks */,
+				035F08151C10AAF20035633E /* AsyncNetworkTvOS.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -58,6 +57,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		035F08121C10AAEE0035633E /* AsyncNetworkTvOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AsyncNetworkTvOS.framework; sourceTree = "<group>"; };
 		03F1D8601C0A098C00291C24 /* Snap TV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Snap TV.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		03F1D8641C0A098C00291C24 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		03F1D8661C0A098C00291C24 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -96,8 +96,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03F1D8A11C0A260F00291C24 /* AsyncNetworkIOS.framework in Frameworks */,
-				03F1D89F1C0A258700291C24 /* AsyncNetworkIOS.framework in Frameworks */,
+				035F08141C10AAF20035633E /* AsyncNetworkTvOS.framework in Frameworks */,
+				035F08131C10AAEE0035633E /* AsyncNetworkTvOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,7 +106,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				03F1D8A41C0A261400291C24 /* AsyncNetworkIOS.framework in Frameworks */,
-				03F1D8A01C0A258700291C24 /* AsyncNetworkIOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,6 +191,7 @@
 			isa = PBXGroup;
 			children = (
 				03F1D89E1C0A258700291C24 /* AsyncNetworkIOS.framework */,
+				035F08121C10AAEE0035633E /* AsyncNetworkTvOS.framework */,
 			);
 			path = Libs;
 			sourceTree = "<group>";
@@ -216,7 +216,7 @@
 				03F1D85C1C0A098C00291C24 /* Sources */,
 				03F1D85D1C0A098C00291C24 /* Frameworks */,
 				03F1D85E1C0A098C00291C24 /* Resources */,
-				03F1D8A31C0A260F00291C24 /* Embed Frameworks */,
+				035F08111C10AA390035633E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -430,7 +430,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Libs",
@@ -447,7 +446,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Libs",

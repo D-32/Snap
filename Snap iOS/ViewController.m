@@ -86,7 +86,10 @@
 
 - (void)connect
 {
-  _client = [AsyncClient new];
+  _client = [[AsyncClient alloc] init];
+  _client.delegate = self;
+  _client.serviceType = @"_ClientServer._tcp";
+  _client.autoConnect = YES;
   [_client start];
 }
 
@@ -107,6 +110,16 @@
   _reloadButton.enabled = YES;
   NSLog(@"client disconnected");
   _connectionLabel.text = @"You're disconnected";
+}
+
+- (void)client:(AsyncClient *)theClient didFailWithError:(NSError *)error
+{
+
+}
+
+- (BOOL)client:(AsyncClient *)theClient didFindService:(NSNetService *)service moreComing:(BOOL)moreComing
+{
+  return YES;
 }
 
 @end
